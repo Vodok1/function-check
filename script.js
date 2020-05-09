@@ -32,18 +32,6 @@ switch (sum1) {
     break;
 }
 //console.log(`------------------------------------------------------`);
-// pętla for
-for (let i = 20; i <= 80; i++) {
-  if (i % 10 == 0) {
-    //console.log(`Jestesmy na ${i} i lecimy dalej`);
-  }
-  if (i >= 40) {
-    //console.log(`Dobra, koniec - nastepny wynik przekracza ${i}`);
-    break;
-  }
-}
-//console.log(`------------------------------------------------------`);
-// petla for#2 - wywoluje kazda z liter po indeksie [i] od 0 do 3(.lenght)
 const literki = ["a", "b", "c", "d"];
 for (let i = 0; i < literki.length; i++) {
   //console.log(literki[i]);
