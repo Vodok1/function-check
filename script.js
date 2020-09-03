@@ -441,3 +441,5 @@ function lookUpProfile(name, prop) {
 }
 
 console.log(lookUpProfile("Kristian", "lastName"));
+//test
+//test2
