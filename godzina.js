@@ -1,4 +1,5 @@
 setInterval(function () {
+  //abra kadrabra
   let godziny = new Date();
   let hourActual = godziny.getHours().toString();
   let minuteActual = godziny.getMinutes().toString();
