@@ -448,5 +448,46 @@ function palindrome(str) {
   const strArrBackward = strArr.split("").reverse().join("")
   return strArrBackward === strArr
 }
-console.log(palindrome("A man, a plan, a canal. Panama"));
+//console.log(palindrome("Ad"));
+
+function convertToRoman(num) {
+  var roman = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1
+  };
+  const str = '';
+
+  for (vlet i of Object.keys(roman)) {
+    let q = Math.floor(num / roman[i]);
+    num -= q * roman[i];
+    str += i.repeat(q);
+  }
+
+  return str;
+ }
+ 
+ //console.log(convertToRoman(36));
+
+ function rot13(str) {
+  const string = "";
+  [...str].forEach(letter => {
+    let temp = [];
+    (if letter === /\w/ ){
+      temp.push(letter)
+    }
+  })
+}
+
+rot13("SERR PBQR PNZC");
 
