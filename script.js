@@ -2,7 +2,7 @@ const two = 10;
 const one = 0;
 let sum = two + one;
 const dodanie = `Wynikiem dodawania liczby ${two} oraz ${one} jest ${sum}. Pozdrawiam!`;
-//consoleconsole.log(dodanie);
+//console.log(dodanie);
 //console.log(`------------------------------------------------------`);
 //prosty if
 if (sum > 20) {
@@ -94,7 +94,7 @@ test2["b"] = { a: 1, b: 2 };
 
 let arr = [0, 2, 3, 4];
 x = arr;
-const red = arr.reduce((a, b) => a - b + 10);
+const red = arr.reduce((a, b) => a - b + 3);
 const map = arr.map((x) => (x > 2 ? x - 2 : x + 2));
 //console.log(arr);
 //console.log(red);
@@ -150,7 +150,7 @@ function suma(n) {
   return result;
 }
 
-///console.log(suma(5));
+//console.log(suma(5));
 
 //
 //
@@ -170,8 +170,8 @@ function unique() {
   //lub
   const arraySet = new Set(array1); //<---------to jest Set
   const arraySetArray = [...arraySet]; //<---------tutaj juz Array
-  console.log(arraySetArray);
-  console.log([...new Set(array1)]);
+  //console.log(arraySetArray);
+  //console.log([...new Set(array1)]);
 }
 //unique();
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -440,6 +440,13 @@ function lookUpProfile(name, prop) {
   return "No such contact";
 }
 
-console.log(lookUpProfile("Kristian", "lastName"));
+//console.log(lookUpProfile("Kristian", "lastName"));
 //test
 //test2
+function palindrome(str) {
+  const strArr = str.toLowerCase().replace(/[\W_]/g, '')
+  const strArrBackward = strArr.split("").reverse().join("")
+  return strArrBackward === strArr
+}
+console.log(palindrome("A man, a plan, a canal. Panama"));
+
